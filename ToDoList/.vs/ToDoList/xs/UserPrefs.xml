@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{F201B1FD-BD84-4192-8C6E-3D185122CEB4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ToDoList.Core/ViewModels/Pages/WorkTasksPageViewModel.cs">
     <Files>
-      <File FileName="ToDoList.Core/ViewModels/Pages/WorkTasksPageViewModel.cs" Line="25" Column="39" />
+      <File FileName="ToDoList.Core/ViewModels/Pages/WorkTasksPageViewModel.cs" Line="23" Column="15" />
       <File FileName="ToDoList.Core/ViewModels/Controls/WorkTaskViewModel.cs" Line="6" Column="35" />
     </Files>
     <Pads>
