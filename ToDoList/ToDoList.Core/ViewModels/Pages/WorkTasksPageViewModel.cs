@@ -38,8 +38,8 @@ namespace ToDoList.Core
             NewWorkTaskTitle = string.Empty;
             NewWorkTaskDescription = string.Empty;
 
-            OnPropertyChanged(nameof(NewWorkTaskTitle));
-            OnPropertyChanged(nameof(NewWorkTaskDescription));
+            //OnPropertyChanged(nameof(NewWorkTaskTitle));
+            //OnPropertyChanged(nameof(NewWorkTaskDescription));
         }
 
         private void DeleteSelectedTasks()
