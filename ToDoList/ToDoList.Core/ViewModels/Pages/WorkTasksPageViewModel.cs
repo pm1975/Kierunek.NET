@@ -1,14 +1,15 @@
 ﻿
 using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace ToDoList.Core
 {
-    public class WorkTasksPageViewModel
+    public class WorkTasksPageViewModel : BaseViewModel
     {
 
-        public List<WorkTaskViewModel> WorkTaskList { get; set; } = new List<WorkTaskViewModel>();
+        public ObservableCollection<WorkTaskViewModel> WorkTaskList { get; set; } = new ObservableCollection<WorkTaskViewModel>();
 
         public string NewWorkTaskTitle { get; set; }
 
@@ -31,6 +32,12 @@ namespace ToDoList.Core
             };
 
             WorkTaskList.Add(newTask);
+
+            NewWorkTaskTitle = string.Empty;
+            NewWorkTaskDescription = string.Empty;
+
+            OnPropertyChanged(nameof(NewWorkTaskTitle));
+            OnPropertyChanged(nameof(NewWorkTaskDescription));
         }
     }
 }

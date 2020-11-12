@@ -3,7 +3,7 @@ using System;
 
 namespace ToDoList.Core
 {
-    public class WorkTaskViewModel
+    public class WorkTaskViewModel : BaseViewModel
     {
 
         public string Title { get; set; }
