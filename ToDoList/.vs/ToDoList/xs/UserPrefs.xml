@@ -1,8 +1,7 @@
-﻿<Properties StartupConfiguration="{F201B1FD-BD84-4192-8C6E-3D185122CEB4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoList.Core/ViewModels/Pages/WorkTasksPageViewModel.cs">
+﻿<Properties StartupConfiguration="{7BCE632A-9A14-438E-A042-0EDA1D384189}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoList.Mobile.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="ToDoList.Core/ViewModels/Pages/WorkTasksPageViewModel.cs" Line="23" Column="15" />
-      <File FileName="ToDoList.Core/ViewModels/Controls/WorkTaskViewModel.cs" Line="6" Column="35" />
+      <File FileName="ToDoList.Mobile.iOS/AppDelegate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,13 +9,13 @@
           <Node name="ToDoList" expanded="True">
             <Node name="ToDoList.Core" expanded="True">
               <Node name="ViewModels" expanded="True">
-                <Node name="Controls" expanded="True" />
-                <Node name="Pages" expanded="True">
-                  <Node name="WorkTasksPageViewModel.cs" selected="True" />
-                </Node>
+                <Node name="Pages" expanded="True" />
               </Node>
             </Node>
-            <Node name="ToDoList.Mac" expanded="True" />
+            <Node name="ToDoList.Mobile" expanded="True" />
+            <Node name="ToDoList.Mobile.iOS" expanded="True">
+              <Node name="AppDelegate.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -24,9 +23,14 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ToDoList.Mac PreferredExecutionTarget="Test1" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>ToDoList.WPF/ToDoList.WPF.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ToDoList.Mobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4847E5C7-5E9A-4483-A45E-BC475084DF9D" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ToDoList.Mobile.Android FirstBuild="True" />
 </Properties>
