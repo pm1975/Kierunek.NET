@@ -12,6 +12,21 @@
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="To są twoje dzisiejsze zadania:" />
+            <StackPanel Margin="10">
+                <local:WorkTask/>
+                <local:WorkTask/>
+                <local:WorkTask/>
+                <local:WorkTask/>
+                <local:WorkTask/>
+            </StackPanel>
+            <TextBlock Text="Tytuł zadania:"/>
+            <TextBox/>
+            <TextBlock Text="Opis zadania:"/>
+            <TextBox/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Dodaj"/>
+                <Button Content="Usuń"/>
+            </StackPanel>
         </StackPanel>
 
     </Grid>
