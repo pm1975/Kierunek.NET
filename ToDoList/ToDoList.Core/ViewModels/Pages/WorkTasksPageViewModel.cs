@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Windows.Input;
 
 namespace ToDoList.Core
 {
@@ -12,6 +13,13 @@ namespace ToDoList.Core
         public string NewWorkTaskTitle { get; set; }
 
         public string NewWorkTaskDescription { get; set; }
+
+        public ICommand AddNewTaskCommand { get; set; }
+
+        public WorkTasksPageViewModel()
+        {
+            AddNewTaskCommand = new RelayCommand(AddNewTask);
+        }
 
         private void AddNewTask()
         {

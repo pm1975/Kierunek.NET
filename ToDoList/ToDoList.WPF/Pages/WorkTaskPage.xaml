@@ -20,11 +20,11 @@
                 <local:WorkTask/>
             </StackPanel>
             <TextBlock Text="Tytuł zadania:"/>
-            <TextBox/>
+            <TextBox Text="{Binding NewWorkTaskTitle}"/>
             <TextBlock Text="Opis zadania:"/>
-            <TextBox/>
+            <TextBox Text="{Binding NewWorkTaskDescription}"/>
             <StackPanel Orientation="Horizontal">
-                <Button Content="Dodaj"/>
+                <Button Command="{Binding AddNewTaskCommand}" Content="Dodaj"/>
                 <Button Content="Usuń"/>
             </StackPanel>
         </StackPanel>
