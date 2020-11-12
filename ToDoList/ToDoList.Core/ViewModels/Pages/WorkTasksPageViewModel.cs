@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 
 namespace ToDoList.Core
@@ -16,10 +16,12 @@ namespace ToDoList.Core
         public string NewWorkTaskDescription { get; set; }
 
         public ICommand AddNewTaskCommand { get; set; }
+        public ICommand DeleteSelectedTasksCommand { get; set; }
 
         public WorkTasksPageViewModel()
         {
             AddNewTaskCommand = new RelayCommand(AddNewTask);
+            DeleteSelectedTasksCommand = new RelayCommand(DeleteSelectedTasks);
         }
 
         private void AddNewTask()
@@ -38,6 +40,16 @@ namespace ToDoList.Core
 
             OnPropertyChanged(nameof(NewWorkTaskTitle));
             OnPropertyChanged(nameof(NewWorkTaskDescription));
+        }
+
+        private void DeleteSelectedTasks()
+        {
+            var selectedTasks = WorkTaskList.Where(x => x.IsSelected).ToList();
+
+            foreach (var task in selectedTasks)
+            {
+                WorkTaskList.Remove(task);
+            }
         }
     }
 }
