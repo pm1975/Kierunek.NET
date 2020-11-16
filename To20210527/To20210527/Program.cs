@@ -9,7 +9,7 @@ namespace To20210527
         {
             string v = "";
             string v1 = "";
-            int tasks = 598;
+            int tasks = 600;
             try
             {
                 v = args[0];
@@ -44,8 +44,9 @@ namespace To20210527
             Console.WriteLine("{0} dni zostało do {1}.", odds.Days, date2.ToString("yyyy'-'MM'-'dd"));
             Console.WriteLine("{0} tygodni.", odds.Days / 7);
             Console.WriteLine("1200 - {0} = {1}", tasks, 1200 - tasks);
-            Console.WriteLine("3 * {0} = {1}", odds.Days, 3 * odds.Days);
-            Console.WriteLine("{0} - {1} = {2}", 3 * odds.Days, 1200 - tasks, (3 * odds.Days) - (1200 - tasks));
+            //Console.WriteLine("3 * {0} = {1}", odds.Days, 3 * odds.Days);
+            Console.WriteLine("3 * {0} - {1} = {2}", odds.Days, 1200 - tasks, (3 * odds.Days) - (1200 - tasks));
+            Console.WriteLine("2 * {0} - {1} = {2}", odds.Days, 1200 - tasks, (2 * odds.Days) - (1200 - tasks));
             Console.WriteLine((1200.0 - tasks)/odds.Days);
             Console.WriteLine("");
             PrintOptions(tasks, odds.Days);
@@ -54,32 +55,47 @@ namespace To20210527
 
         static void PrintOptions(int tasks, int days)
         {
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 0 * 5 + 5 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 0 * 5 + 5 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 1 * 5 + 3 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 1 * 5 + 3 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 0 * 5 + 6 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 0 * 5 + 6 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 0 * 5 + 2 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (1 * 9 + 0 * 5 + 2 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 1 * 5 + 0 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (1 * 9 + 1 * 5 + 0 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 1 * 5 + 5 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 1 * 5 + 5 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 2 * 5 + 3 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 2 * 5 + 3 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 3 * 5 + 1 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 3 * 5 + 1 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 2 * 5 + 4 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (0 * 9 + 2 * 5 + 4 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 2 * 5 + 0 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (1 * 9 + 2 * 5 + 0 * 2)) - 1200);
-            Console.WriteLine("{0} + ({1}/7 * (2 * 9 + 0 * 5 + 1 * 2)) - 1200 = {2}",
-             tasks, days, tasks + (days / 7 * (2 * 9 + 0 * 5 + 1 * 2)) - 1200);
-            int result = tasks + (days / 7 * (0 * 9 + 3 * 5 + 3 * 2)) - 1200;
-            if (result < 0) Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 3 * 5 + 3 * 2)) - 1200 = {2}", tasks, days, result);
-            result = tasks + (days / 7 * (0 * 9 + 4 * 5 + 1 * 2)) - 1200;
-            if (result < 0) Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 4 * 5 + 1 * 2)) - 1200 = {2}", tasks, days, result);
+            int resultCheckInIf;
+            int dontShow = -1 * (3 * days / 7);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 0 * 5 + 5 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 0 * 5 + 5 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 1 * 5 + 3 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 1 * 5 + 3 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 0 * 5 + 6 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 0 * 5 + 6 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (1 * 9 + 0 * 5 + 2 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 0 * 5 + 2 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (1 * 9 + 1 * 5 + 0 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 1 * 5 + 0 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 1 * 5 + 5 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 1 * 5 + 5 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 2 * 5 + 3 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 2 * 5 + 3 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 3 * 5 + 1 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 3 * 5 + 1 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 2 * 5 + 4 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 2 * 5 + 4 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (1 * 9 + 2 * 5 + 0 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (1 * 9 + 2 * 5 + 0 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (2 * 9 + 0 * 5 + 1 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (2 * 9 + 0 * 5 + 1 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 3 * 5 + 3 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 3 * 5 + 3 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
+            resultCheckInIf = tasks + (days / 7 * (0 * 9 + 4 * 5 + 1 * 2)) - 1200;
+            if (resultCheckInIf < 0 && resultCheckInIf > dontShow)
+                Console.WriteLine("{0} + ({1}/7 * (0 * 9 + 4 * 5 + 1 * 2)) - 1200 = {2}", tasks, days, resultCheckInIf);
         }
     }
 }
