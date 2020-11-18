@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7BCE632A-9A14-438E-A042-0EDA1D384189}</ProjectGuid>
+    <ProjectGuid>{48CE55A4-4152-48B3-8E9F-D9B177685858}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -128,7 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ToDoList.Mobile\ToDoList.Mobile.csproj">
-      <Project>{B6B93394-29E6-40BC-ACA3-64D02E01B454}</Project>
+      <Project>{B09D5726-2FB5-4339-AD07-0ED7192D65EE}</Project>
       <Name>ToDoList.Mobile</Name>
     </ProjectReference>
   </ItemGroup>
