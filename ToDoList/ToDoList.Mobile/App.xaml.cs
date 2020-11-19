@@ -10,7 +10,7 @@ namespace ToDoList.Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new WorkTasksPage();
         }
 
         protected override void OnStart()
