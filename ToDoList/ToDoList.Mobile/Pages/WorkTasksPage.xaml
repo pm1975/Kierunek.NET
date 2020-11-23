@@ -5,5 +5,6 @@
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Jestesmy na worktaskpage" />
+        <Label Text="To jest druga linia" />
     </StackLayout>
 </ContentPage>
