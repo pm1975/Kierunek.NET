@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoList.Mobile.Pages.WorkTasksPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="To są twoje dzisiejsze zadania:" />
+        <!--<ItemsView ItemsSource="{Binding WorkTaskList}">
+            <ItemsView.ItemTemplate>
+                
+            </ItemsView.ItemTemplate>
+        </ItemsView>-->
+        <Label Text="Tytuł zadania:"/>
+        <Entry/>
+        <Label Text="Opis zadania"/>
+        <Entry/>
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Dodaj"/>
+
+            <Button Grid.Column="1" Text="Usuń"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
