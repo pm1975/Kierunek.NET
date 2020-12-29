@@ -4,13 +4,15 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.Core", "ToDoList.Core\ToDoList.Core.csproj", "{09AC88AB-ECE5-4544-A16D-21AEC4E10B32}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "ToDoList.WPF", "ToDoList.WPF\ToDoList.WPF.csproj", "{B065D335-2424-47C5-9233-0779F5A4E8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.WPF", "ToDoList.WPF\ToDoList.WPF.csproj", "{B065D335-2424-47C5-9233-0779F5A4E8AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Mobile.Android", "ToDoList.Mobile.Android\ToDoList.Mobile.Android.csproj", "{932BBB13-7021-47C6-AAAF-33C080C3A9D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Mobile.iOS", "ToDoList.Mobile.iOS\ToDoList.Mobile.iOS.csproj", "{F4D46014-B34D-4A91-99DE-6E41CEBC15ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Mobile", "ToDoList.Mobile\ToDoList.Mobile.csproj", "{700B3694-7919-4B76-A005-6D5CE792936E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.Mobile", "ToDoList.Mobile\ToDoList.Mobile.csproj", "{700B3694-7919-4B76-A005-6D5CE792936E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Database", "ToDoList.Database\ToDoList.Database.csproj", "{FBFF5A47-7266-42CF-8B2B-6730284D9C79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +84,18 @@ Global
 		{700B3694-7919-4B76-A005-6D5CE792936E}.Release|iPhone.Build.0 = Release|Any CPU
 		{700B3694-7919-4B76-A005-6D5CE792936E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{700B3694-7919-4B76-A005-6D5CE792936E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|iPhone.Build.0 = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{FBFF5A47-7266-42CF-8B2B-6730284D9C79}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
