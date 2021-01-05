@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using ToDoList.Core.Helpers;
 using ToDoList.Database;
 
 namespace ToDoList.WPF
@@ -15,6 +16,8 @@ namespace ToDoList.WPF
             var database = new ToDoListDbContext();
 
             database.Database.EnsureCreated();
+
+            DatabaseLocator.Database = database;
         }
     }
 }
